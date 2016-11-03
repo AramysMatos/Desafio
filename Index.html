@@ -1,0 +1,163 @@
+<html>
+
+    <head>
+        <title>Desafio</title>     
+
+        <script type="text/javascript" src="paginaIndex.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <center>
+                    <h2>Desafio Stone</h4>
+                </center>
+            </div>
+
+        </div> 
+        
+     <div class="row">  
+            <div class="col-md-6">
+                <h4>Perguntas</h4>
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Então quantas preposições existem no texto?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <p id="idResposta1">Resposta: Existem __ preposições no texto.</p>
+                                <input type="button" value="Resposta" id="idPergunta1" /><br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Quantos verbos existem no texto?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <p id="idResposta2">Resposta: Há __ verbos no texto.</p>
+                                <input type="button" value="Resposta" id="idPergunta2" /><br>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    E quantos verbos do texto estão em primeira pessoa?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <p id="idResposta3">Resposta: Há __ verbos em primeira pessoa no texto.</p>
+                                <input type="button" value="Resposta" id="idPergunta3" /><br>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Como seria a lista de vocabulário para o texto?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" >
+                            <div class="panel-body">
+                                <div style="height: 110px overflow-x: scroll;">
+
+                                </div>
+                                <!-- Small modal -->
+                                <button type="button" id="idPergunta4"  data-toggle="modal" data-target="#myModal"> Exibir Lista de Palavras</button>
+
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">Lista de Palavras</h4>
+                                            </div>
+                                            <p id="idResposta4"> </p>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">           
+                                    E no texto, quantos números bonitos distintos existem?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                <p id="idResposta5">Resposta: No texto, há__ números bonitos distintos.</p>
+                                <input type="button" value="Resposta" id="idPergunta5" /><br>
+
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    E no texto, quantos números lindos distintos existem?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="panel-body">
+                                <p id="idResposta6"> Resposta: No texto, há __ números lindos distintos </p>
+                                <input type="button" value="Resposta" id="idPergunta6" /><br>
+                            </div>
+                        </div>
+                    </div>    
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>Texto do Pergaminho</h4>
+                <textarea name=mytextarea id="idTextoPergaminho"  cols=80 rows=17>
+                </textarea> 
+            </div>
+        </div>
+    </body>   
+</html>
